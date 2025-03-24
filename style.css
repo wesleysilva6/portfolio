@@ -124,6 +124,9 @@ section.especialidades{
     display: flex;
 }
 
+section.especialidades .box{
+    gap: 60px;
+}
 
 .especialidades .especialidades-box{
     color: #fff;
@@ -295,7 +298,7 @@ form .btn-enviar input:hover{
     box-shadow: 0 0 12px rgb(124, 45, 45);
 }
 
-/* Footer */
+/* FOOTER */
 
 footer{
     padding: 80px 4%;
@@ -385,10 +388,13 @@ footer{
         margin: 5px 5px;    
         margin-top: 12px;
     }
-    
 
     .txt-topo-site button:hover{
-        transform: scale(1.20);
+        transform: none;
+        transition: none;
+        box-shadow: none;
+        background-color: black;
+        color: #ffffff;
     }
 
     h2.titulo{
@@ -413,9 +419,25 @@ footer{
         margin-top: 40px;
     }
 
+    .especialidades .especialidades-box:hover{
+        transform: none;
+        box-shadow: none;
+    }
+
+    .especialidades .especialidades-box button:hover{
+        transform: none;
+        box-shadow: none;
+        background-color: black;
+    }
+
 /* MINHAS SKILS */
     .container{
         margin-top: 20px;
+    }
+
+    .card img:hover{
+        transform: none;
+        transition: none;
     }
 
 /* SOBRE */
@@ -427,4 +449,42 @@ footer{
     section.sobre .img-sobre img{
         width: 400px;
     }
+
+    .txt-sobre{
+        color: #fff;
+        margin-top: 1px;
+        font-size: 12px;
+        padding: 30px;
+        margin: 20px;
+    }
+
+/* MEUS PROJETOS */
+section.projetos .flex{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* CONTATO */
+form{
+    max-width: 350px;
+}
+
+::placeholder{
+    font-size: 13px;
+}
+
+form .btn-enviar input:hover{
+    transform: none;
+    transition: none;
+    box-shadow: none;
+}
+
+/* FOOTER */
+.btn-footer button:hover{
+    transform: none;
+    transition: none;
+    box-shadow: none;
+    background-color: #111111;
+    color: #ffffff;
+}
 }
