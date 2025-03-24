@@ -41,7 +41,7 @@ header a{
 }
 
 header a:hover{
-    color: rgb(148, 53, 53);
+    color: rgb(124, 45, 45);
     transition: 0.2s;
 }
 
@@ -66,13 +66,13 @@ section.topo-site .flex{
 
 .txt-topo-site button{
     color: #fff;
-    padding: 10px;
-    border-radius: 20px;
-    background-color: #000000;
+    padding: 10px;  
     border: 2px inset rgb(124, 45, 45);
+    border-radius: 20px;
+    background: transparent;
     cursor: pointer;
-    font-size: 15px;
-    margin: 5px 5px;
+    font-size: 13px;
+    margin: 5px 5px;    
     margin-top: 12px;
 }
 
@@ -106,13 +106,11 @@ h2.titulo{
     color: #fff;
     font-size: 40px;
     text-align: center;
-    
 }
 
 span{
     color: rgb(148, 53, 53);
 }
-
 
 /* MINHAS ESPECIALIDADES*/
 section.especialidades{
@@ -126,9 +124,6 @@ section.especialidades{
     display: flex;
 }
 
-section.especialidades .box{
-    gap: 50px;
-}
 
 .especialidades .especialidades-box{
     color: #fff;
@@ -174,11 +169,10 @@ section.especialidades .box{
     transform: scale(1.05);
     box-shadow: 0 0 25px rgb(148, 53, 53);
     background-color: rgb(148, 53, 53);
-    color: #000000;
+    color: #ffffff;
 }
 
 /* MINHAS SKILS */
-
 section.skils{
     padding: 40px 4%;
     font-family: "Poppins", sans-serif;
@@ -231,23 +225,206 @@ section.sobre .img-sobre img{
 
 /* MEUS PROJETOS */
 section.projetos{
-    padding: 40px 4%;
+    padding: 80px 4%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    box-shadow: 0 0 40px 2px rgb(124, 45, 45);
+}
+
+section.projetos .flex{
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.img-pj{
+    width: 360px;
+    height: 460px;
+    background-color: rgb(124, 45, 45);
+}
+
+/* Contato */
+
+section.formulario{
+    padding: 80px 4%;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: italic;
 }
 
-.box-pj{
-    border: 5px inset rgb(148, 53, 53);
-    border-radius: 20px;
+form{
+    max-width: 560px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
     margin-top: 30px;
 }
 
-.box-pj h3{
-    color: rgb(148, 53, 53);
+form input, form textarea{
+    width: 100%;
+    background-color: #111111;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 20px;
+    font-size: 18px;
+    color: #ffffff;
 }
 
-section .box-pj img{
-    width: 100px;
-    height: 300px;
+form textarea{
+    resize: none;
+    height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    cursor: pointer;
+    background: rgb(148, 53, 53);
+}
+
+form .btn-enviar input:hover{
+    transform: scale(1.10);
+    transition: 0.3s;
+    box-shadow: 0 0 12px rgb(124, 45, 45);
+}
+
+/* Footer */
+
+footer{
+    padding: 80px 4%;
+    background-color: #111111;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.line-footer1{
+    text-align: center;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 20px;
+}
+
+.line-footer2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-footer{
+    margin-top: 10px;
+    gap: 15px;
+}
+
+.btn-footer button{
+    background: transparent;
+    color: #ffffff;
+    border: 2px inset rgb(124, 45, 45);
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 6px;
+    font-size: 12px;
+}
+
+.btn-footer button:hover{
+    transform: scale(1.30);
+    transition: 0.3s;
+    box-shadow: 0 0 25px rgb(148, 53, 53);
+    background-color: rgb(148, 53, 53);
+    color: #000000;
+}
+
+@media screen and (max-width:1312px) {
+    
+}
+
+@media screen and (max-width:440px) {
+    
+}
+
+@media screen and (max-width:393px) {
+    header{
+        display: none;
+    }
+
+/* ESTILO TOPO SITE */
+    section.topo-site .flex{
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+    
+    .txt-topo-site h1{
+        font-size: 30px;
+    }
+
+    .txt-topo-site h2{
+        font-size: 34px;
+        font-family: "Archivo", sans-serif;
+    }
+
+    .txt-topo-site button{
+        padding: 7px;
+        font-size: 12px;
+        margin: 5px 5px;    
+        margin-top: 12px;
+    }
+    
+
+    .txt-topo-site button:hover{
+        transform: scale(1.20);
+    }
+
+    h2.titulo{
+        color: #fff;
+        font-size: 28px;
+        text-align: center;
+    }
+
+/* MINHAS ESPECIALIDADES */
+    .box{
+        flex-wrap: wrap;
+    }
+
+    section.especialidades .box{
+        gap: 1px;
+    }
+
+    .especialidades .especialidades-box{
+        padding: 10px;
+        transition: 0.3s;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+/* MINHAS SKILS */
+    .container{
+        margin-top: 20px;
+    }
+
+/* SOBRE */
+    section.sobre .flex{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    section.sobre .img-sobre img{
+        width: 400px;
+    }
 }
