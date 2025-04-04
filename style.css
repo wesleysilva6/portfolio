@@ -25,7 +25,7 @@ body{
 
 /* ESTILO CABEÇALHO */
 header{
-    padding: 80px 4%;
+    padding: 40px 4%;
     font-family: "Poppins", sans-serif;
 }
 
@@ -122,7 +122,7 @@ section.topo-site .flex{
 
 h2.titulo{
     color: #fff;
-    font-size: 70px;
+    font-size: 40px;
     text-align: center;
 }
 
