@@ -212,6 +212,10 @@ section.skils{
     border-radius: 20px;
 }
 
+.card img {
+    width: 100px;
+}
+
 .card img:hover{
     transform: scale(1.08);
     transition: 0.3s;
