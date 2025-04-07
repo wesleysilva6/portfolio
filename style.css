@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #000000;
     width: 100%;
@@ -63,10 +67,14 @@ header nav ul li{
 }
 
 /* ESTILO TOPO SITE */
-main img {
-    width: 300px;
-    height: 350px;
+section.topo-site .img-topo-site img {
+    width: 400px;
     border-radius: 50%;
+}
+
+.img-topo-site:hover {
+    transform: scale(1.10);
+    transition: 0.4s ease-in-out;
 }
 
 section.topo-site{
@@ -83,11 +91,10 @@ section.topo-site .flex{
     padding: 10px;  
     border: 2px solid rgb(124, 45, 45);
     border-radius: 20px;
-    background: none;
+    background: #000000;
     cursor: pointer;
-    font-size: 13px;
-    margin: 5px 5px;    
-    margin-top: 12px;
+    font-size: 15px;
+    margin: 12px 8px;
 }
 
 .txt-topo-site button:hover{
@@ -126,17 +133,11 @@ h2.titulo{
     text-align: center;
 }
 
-.img-topo-site:hover {
-    transform: scale(1.10);
-    box-shadow: 10px 10px 10px 30px #461313;
-    transition: 0.4s ease-in-out;
-}
-
 span{
     color: rgb(148, 53, 53);
 }
 
-/* MINHAS ESPECIALIDADES*/
+/*SERVIÇOS*/
 .services {
     padding: 80px 4%;
     background: #0e0e0e3a;
@@ -154,10 +155,10 @@ span{
 
 .services-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,2fr);
     gap: 20px;
     font-family: "Poppins", sans-serif;
-    height: 300px;
+    height: 500px;
 }
 
 .services-box {
@@ -184,15 +185,13 @@ span{
     font-size: 18px;
     font-weight: 400;
     line-height: 1.0;
-    padding: 6px;
+    margin: 0 20px 0 10px;
 }
 
 /* MINHAS SKILS */
 section.skils{
     padding: 40px 4%;
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: italic;
 }
 
 .txt-skils{
@@ -222,29 +221,25 @@ section.skils{
 section.sobre {
     padding: 40px 4%;
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: italic;
     background: #0e0e0e3a;
 }
 
 .txt-sobre{
     color: #fff;
-    margin-top: 20px;
+    margin: 20px;
     font-size: 22px;
     padding: 30px;
-    margin: 20px;
 }
 
 section.sobre .img-sobre img{
     width: 500px;
+    border-radius: 50%;
 }
 
 /* MEUS PROJETOS */
 section.projetos{
     padding: 80px 4%;
     font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: italic;
 }
 
 section.projetos .flex{
@@ -258,13 +253,10 @@ section.projetos .flex{
     background-color: rgb(124, 45, 45);
 }
 
-/* Contato */
-
+/* CONTATO*/
 section.formulario{
     padding: 80px 4%;
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: italic;
     background: #0e0e0e3a;
 }
 
@@ -312,14 +304,11 @@ form .btn-enviar input:hover{
 }
 
 /* FOOTER */
-
 footer{
     padding: 80px 4%;
     background-color: #111111;
     color: #ffffff;
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: italic;
 }
 
 .line-footer1{
@@ -371,34 +360,55 @@ footer{
     
 }
 
-@media screen and (max-width:440px) {
-    
+@media screen and (max-width:870px) {
+    header {
+        display: none;
+    }
 }
 
-@media screen and (max-width:393px) {
+@media screen and (max-width:440px) {
     header{
         display: none;
     }
 
 /* ESTILO TOPO SITE */
+    section.topo-site .img-topo-site img {
+        width: 250px;
+    }
+
+    .img-topo-site:hover {
+        transform: none;
+        transition: none;
+    }
+
     section.topo-site .flex{
         justify-content: center;
         flex-wrap: wrap-reverse;
     }
     
+    .txt-topo-site button{
+        margin: 1px 2px;
+    }
+
     .txt-topo-site h1{
         font-size: 30px;
+        margin: 0 10px 0 10px;
     }
 
     .txt-topo-site h2{
         font-size: 34px;
-        font-family: "Archivo", sans-serif;
+        margin: 0 10px 0 10px;
+    }
+
+    .txt-topo-site p{
+        color: #fff;
+        margin-left: 10px;
     }
 
     .txt-topo-site button{
         padding: 7px;
         font-size: 12px;
-        margin: 5px 5px;    
+        margin: 10px 8px 0 10px;    
         margin-top: 12px;
     }
 
@@ -416,36 +426,46 @@ footer{
         text-align: center;
     }
 
-/* MINHAS ESPECIALIDADES */
-    .box{
-        flex-wrap: wrap;
-    }
+/* SERVIÇOS */
+.services {
+    padding: 40px 4%;
+    background: #0e0e0e3a;
+}
 
-    section.especialidades .box{
-        gap: 1px;
-    }
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    font-family: "Poppins", sans-serif;
+    height: 300px;
+}
 
-    .especialidades .especialidades-box{
-        padding: 10px;
-        transition: 0.3s;
-        text-align: center;
-        margin-top: 40px;
-    }
+.services-box {
+    border: none;
+}
 
-    .especialidades .especialidades-box:hover{
-        transform: none;
-        box-shadow: none;
-    }
+.services-box:hover {
+    background: rgb(148, 53, 53);
+    border: none;
+}
 
-    .especialidades .especialidades-box button:hover{
-        transform: none;
-        box-shadow: none;
-        background-color: black;
-    }
+.services-info h4 {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 2;
+    text-align: center;
+}
+
+.services-info p {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.0;
+    margin: 0 18px 0 22px;
+}
 
 /* MINHAS SKILS */
     .container{
-        margin-top: 20px;
+        margin: 20px;
     }
 
     .card img:hover{
@@ -460,15 +480,176 @@ footer{
     }
 
     section.sobre .img-sobre img{
-        width: 400px;
+        width: 300px;
+        margin: 30px;
     }
 
     .txt-sobre{
-        color: #fff;
-        margin-top: 1px;
         font-size: 12px;
-        padding: 30px;
+        text-align: left;
+        margin: 1px 10px 0 10px;
+    }
+
+/* MEUS PROJETOS */
+section.projetos .flex{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* PROJETOS */
+.img-pj{
+    width: 380px;
+    height: 400px;
+    background-color: rgb(124, 45, 45);
+}
+
+/* CONTATO */
+form{
+    max-width: 350px;
+}
+
+::placeholder{
+    font-size: 13px;
+}
+
+form .btn-enviar input:hover{
+    transform: none;
+    transition: none;
+    box-shadow: none;
+}
+
+/* FOOTER */
+.btn-footer button:hover{
+    transform: none;
+    transition: none;
+    box-shadow: none;
+    background-color: #111111;
+    color: #ffffff;
+}
+}
+
+@media screen and (max-width:393px) {
+    header{
+        display: none;
+    }
+
+/* ESTILO TOPO SITE */
+    section.topo-site .img-topo-site img {
+        width: 200px;
+    }
+
+    .img-topo-site:hover {
+        transform: none;
+        transition: none;
+    }
+
+    section.topo-site .flex{
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+    
+    .txt-topo-site button{
+        margin: 1px 2px;
+    }
+
+    .txt-topo-site h1{
+        font-size: 30px;
+        margin: 0 10px 0 10px;
+    }
+
+    .txt-topo-site h2{
+        font-size: 34px;
+        margin: 0 10px 0 10px;
+    }
+
+    .txt-topo-site p{
+        color: #fff;
+        margin-left: 10px;
+    }
+
+    .txt-topo-site button{
+        padding: 7px;
+        font-size: 12px;
+        margin: 10px 8px 0 10px;    
+        margin-top: 12px;
+    }
+
+    .txt-topo-site button:hover{
+        transform: none;
+        transition: none;
+        box-shadow: none;
+        background-color: black;
+        color: #ffffff;
+    }
+
+    h2.titulo{
+        color: #fff;
+        font-size: 28px;
+        text-align: center;
+    }
+
+/* SERVIÇOS */
+.services {
+    padding: 40px 4%;
+    background: #0e0e0e3a;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    font-family: "Poppins", sans-serif;
+    height: 300px;
+}
+
+.services-box {
+    border: none;
+}
+
+.services-box:hover {
+    background: rgb(148, 53, 53);
+    border: none;
+}
+
+.services-info h4 {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 2;
+    text-align: center;
+}
+
+.services-info p {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.0;
+    margin: 0 12px 0 12px;
+}
+
+/* MINHAS SKILS */
+    .container{
         margin: 20px;
+    }
+
+    .card img:hover{
+        transform: none;
+        transition: none;
+    }
+
+/* SOBRE */
+    section.sobre .flex{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    section.sobre .img-sobre img{
+        width: 300px;
+        margin: 30px;
+    }
+
+    .txt-sobre{
+        font-size: 12px;
+        text-align: left;
+        margin: 1px 10px 0 10px;
     }
 
 /* MEUS PROJETOS */
