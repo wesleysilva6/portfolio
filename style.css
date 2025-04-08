@@ -190,7 +190,7 @@ span{
 
 /* MINHAS SKILS */
 section.skils{
-    padding: 40px 4%;
+    padding: 141px 4%;
     font-family: "Poppins", sans-serif;
 }
 
@@ -223,7 +223,7 @@ section.skils{
 
 /* SOBRE */
 section.sobre {
-    padding: 40px 4%;
+    padding: 120px 4%;
     font-family: "Poppins", sans-serif;
     background: #0e0e0e3a;
 }
@@ -242,7 +242,7 @@ section.sobre .img-sobre img{
 
 /* MEUS PROJETOS */
 section.projetos{
-    padding: 80px 4%;
+    padding: 134px 4%;
     font-family: "Poppins", sans-serif;
 }
 
@@ -662,9 +662,15 @@ section.projetos .flex{
     flex-wrap: wrap;
 }
 
+.img-pj{
+    width: 400px;
+    height: 260px;
+    background-color: rgb(124, 45, 45);
+}
+
 /* CONTATO */
 form{
-    max-width: 350px;
+    max-width: 300px;
 }
 
 ::placeholder{
