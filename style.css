@@ -472,6 +472,10 @@ footer{
         margin: 20px;
     }
 
+    .card img {
+        width: 80px;
+    }
+
     .card img:hover{
         transform: none;
         transition: none;
@@ -503,7 +507,7 @@ section.projetos .flex{
 /* PROJETOS */
 .img-pj{
     width: 380px;
-    height: 400px;
+    height: 300px;
     background-color: rgb(124, 45, 45);
 }
 
@@ -634,6 +638,10 @@ form .btn-enviar input:hover{
         margin: 20px;
     }
 
+    .card img {
+        width: 80px;
+    }
+
     .card img:hover{
         transform: none;
         transition: none;
@@ -663,7 +671,7 @@ section.projetos .flex{
 }
 
 .img-pj{
-    width: 400px;
+    width: 340px;
     height: 260px;
     background-color: rgb(124, 45, 45);
 }
@@ -675,6 +683,181 @@ form{
 
 ::placeholder{
     font-size: 13px;
+}
+
+form .btn-enviar input{
+    width: 100px;
+    font-size: 15px;
+}
+
+form .btn-enviar input:hover{
+    transform: none;
+    transition: none;
+    box-shadow: none;
+}
+
+/* FOOTER */
+.btn-footer button:hover{
+    transform: none;
+    transition: none;
+    box-shadow: none;
+    background-color: #111111;
+    color: #ffffff;
+}
+}
+
+@media screen and (max-width:365px) {
+    header{
+        display: none;
+    }
+
+/* ESTILO TOPO SITE */
+    section.topo-site .img-topo-site img {
+        width: 160px;
+    }
+
+    .img-topo-site:hover {
+        transform: none;
+        transition: none;
+    }
+
+    section.topo-site .flex{
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+    
+    .txt-topo-site button{
+        margin: 1px 2px;
+    }
+
+    .txt-topo-site h1{
+        font-size: 26px;
+        margin: 0 12px 0 12px;
+    }
+
+    .txt-topo-site h2{
+        font-size: 28px;
+        margin: 0 12px 0 12px;
+    }
+
+    .txt-topo-site p{
+        color: #fff;
+        margin: 0 0 0 10px;
+        font-size: 13px;
+    }
+
+    .txt-topo-site button{
+        padding: 7px;
+        font-size: 10px;
+        margin: 10px 2px 20px 12px;    
+    }
+
+    .txt-topo-site button:hover{
+        transform: none;
+        transition: none;
+        box-shadow: none;
+        background-color: black;
+        color: #ffffff;
+    }
+
+    h2.titulo{
+        color: #fff;
+        font-size: 24px;
+        text-align: center;
+    }
+
+/* SERVIÇOS */
+.services {
+    padding: 100px 4%;
+    background: #0e0e0e3a;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    font-family: "Poppins", sans-serif;
+    height: 300px;
+}
+
+.services-box {
+    border: none;
+}
+
+.services-box:hover {
+    background: rgb(148, 53, 53);
+    border: none;
+}
+
+.services-info h4 {
+    font-size: 23px;
+    font-weight: 800;
+    line-height: 2;
+    text-align: center;
+}
+
+.services-info p {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.0;
+    margin: 0 12px 0 12px;
+}
+
+/* MINHAS SKILS */
+    .container{
+        margin: 20px;
+    }
+
+    .card img {
+        width: 70px;
+    }
+
+    .card img:hover{
+        transform: none;
+        transition: none;
+    }
+
+/* SOBRE */
+    section.sobre .flex{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    section.sobre .img-sobre img{
+        width: 300px;
+        margin: 30px;
+    }
+
+    .txt-sobre{
+        font-size: 12px;
+        text-align: left;
+        margin: 1px 10px 0 10px;
+    }
+
+/* MEUS PROJETOS */
+section.projetos .flex{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-pj{
+    width: 300px;
+    height: 220px;
+    background-color: rgb(124, 45, 45);
+}
+
+/* CONTATO */
+form{
+    max-width: 280px;
+}
+
+::placeholder{
+    font-size: 13px;
+}
+
+form .btn-enviar input{
+    width: 73px;
+    font-size: 12px;
 }
 
 form .btn-enviar input:hover{
