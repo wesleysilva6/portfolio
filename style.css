@@ -39,7 +39,7 @@ header > .interface{
     justify-content: space-between;
 }
 
-header a{
+header a, h4{
     color: #fff;
     text-decoration: none;
 }
