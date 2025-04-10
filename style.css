@@ -246,25 +246,7 @@ section.projetos{
     font-family: "Poppins", sans-serif;
 }
 
-.box-projeto {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    width: 300px;
-}
 
-.card-projeto {
-    border: 5px solid rgb(148, 53, 53);
-    border-radius: 10px;
-    padding: 30px;
-}
-
-.card-projeto img {
-    width: 500px;
-}
-
-.txt-card {
-    color: #ffffff;
-}
 
 /* CONTATO */
 section.formulario{
@@ -320,13 +302,13 @@ form .btn-enviar{
 form .btn-enviar input{
     width: 120px;
     cursor: pointer;
-    background: rgb(148, 53, 53);
 }
 
 form .btn-enviar input:hover{
     transform: scale(1.10);
-    transition: 0.3s;
+    transition: 0.5s;
     box-shadow: 0 0 12px rgb(124, 45, 45);
+    background: rgb(148, 53, 53);
 }
 
 /* FOOTER */
