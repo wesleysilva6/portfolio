@@ -1,8 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* ESTILO GERAL */
+:root {
+    --color-background:black;
+    --color:rgb(148, 53, 53);
+    --color-txt:#ffffff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(148, 53, 53);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -14,7 +26,7 @@ html {
 }
 
 body{
-    background-color: #000000;
+    background-color: var(--color-background);
     width: 100%;
 }
 
@@ -40,7 +52,7 @@ header > .interface{
 }
 
 header a, h4{
-    color: #fff;
+    color: var(--color-txt);
     text-decoration: none;
 }
 
@@ -56,7 +68,7 @@ header nav ul li{
 }
 
 .menu-desktop a{
-    color: #ffffff;
+    color: var(--color-txt);
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
 }
@@ -87,11 +99,11 @@ section.topo-site .flex{
 }
 
 .txt-topo-site button{
-    color: #fff;
+    color: var(--color-txt);
     padding: 10px;  
     border: 2px solid rgb(124, 45, 45);
     border-radius: 20px;
-    background: #000000;
+    background: var(--color-background);
     cursor: pointer;
     font-size: 15px;
     margin: 12px 8px;
@@ -101,16 +113,16 @@ section.topo-site .flex{
     transform: scale(1.25);
     transition: 0.3s;
     box-shadow: 0 0 25px rgb(148, 53, 53);
-    background-color: rgb(148, 53, 53);
+    background: rgb(148, 53, 53);
 }
 
 .txt-topo-site h3{
-    color: #ffffff;
+    color: var(--color-txt);
     font-family: "Archivo", sans-serif;
 }
 
 .txt-topo-site h1{
-    color: #fff;
+    color: var(--color-txt);
     font-size: 70px;
     font-family: "Archivo", sans-serif;
 }
@@ -122,13 +134,13 @@ section.topo-site .flex{
 }
 
 .txt-topo-site p{
-    color: #fff;
+    color: var(--color-txt);
     font-family: "Archivo", sans-serif;
     padding: 4px;
 }
 
 h2.titulo{
-    color: #fff;
+    color: var(--color-txt);
     font-size: 40px;
     text-align: center;
 }
@@ -141,14 +153,14 @@ span{
 .services {
     padding: 80px 4%;
     background: #0e0e0e3a;
-    color: #ffffff;
+    color: var(--color-txt);
     justify-content: center;
     text-align: left;
 }
 
 .services h2{
     margin-bottom: 5rem;
-    color: #ffffff;
+    color: var(--color-txt);
     font-family: "Poppins", sans-serif;
     font-weight: 800;
 }
@@ -200,7 +212,7 @@ section.skils{
     text-align: center;
 }
 
-.container{
+.container{ 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -229,7 +241,7 @@ section.sobre {
 }
 
 .txt-sobre{
-    color: #fff;
+    color: var(--color-txt);
     margin: 20px;
     font-size: 22px;
     padding: 30px;
@@ -245,8 +257,6 @@ section.projetos{
     padding: 134px 4%;
     font-family: "Poppins", sans-serif;
 }
-
-
 
 /* CONTATO */
 section.formulario{
@@ -273,7 +283,7 @@ form input, form textarea{
     padding: 20px 15px;
     border-radius: 20px;
     font-size: 18px;
-    color: #ffffff;
+    color: var(--color-txt);
     border: 2px solid rgb(148, 53, 53);
 }
 
@@ -315,13 +325,13 @@ form .btn-enviar input:hover{
 footer{
     padding: 80px 4%;
     background-color: #111111;
-    color: #ffffff;
+    color: var(--color-txt);
     font-family: "Poppins", sans-serif;
 }
 
 .line-footer1{
     text-align: center;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid var(--color-txt);
     padding-bottom: 20px;
 }
 
@@ -348,7 +358,7 @@ footer{
 
 .btn-footer button{
     background: transparent;
-    color: #ffffff;
+    color: var(--color-txt);
     border: 2px solid rgb(124, 45, 45);
     border-radius: 20px;
     cursor: pointer;
@@ -361,7 +371,6 @@ footer{
     transition: 0.3s;
     box-shadow: 0 0 25px rgb(148, 53, 53);
     background-color: rgb(148, 53, 53);
-    color: #000000;
 }
 
 @media screen and (max-width:1312px) {
