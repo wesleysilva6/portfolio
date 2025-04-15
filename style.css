@@ -292,20 +292,21 @@ section.projetos{
 }
 
 .card-projeto h3 {
-    font-size: 3rem;
+    font-size: 20px;
 }
 
 .card-projeto p {
-    font-size: 1.6rem;
+    font-size: 16px;
 }
 
 .btn button {
     background: transparent;
     border-radius: 20px;
     border: 2px solid rgb(148, 53, 53);
-    padding: 20px;
+    padding: 15px;
     font-size: 15px;
     cursor: pointer;
+    color: var(--color-txt);
 }
 
 .btn button:hover {
