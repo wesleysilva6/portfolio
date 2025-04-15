@@ -3,7 +3,6 @@
 /* ESTILO GERAL */
 :root {
     --color-background:black;
-    --color:rgb(148, 53, 53);
     --color-txt:#ffffff;
 }
 
@@ -69,13 +68,13 @@ header nav ul li{
 
 .menu-desktop a{
     color: var(--color-txt);
-    transition: 0.3s ease;
     border-bottom: 3px solid transparent;
 }
 
 .menu-desktop a:hover, .menu-desktop a:active{
     color: rgb(148, 53, 53);
     border-bottom: 3px solid rgb(148, 53, 53);
+    transition: 0.3s ease;
 }
 
 /* ESTILO TOPO SITE */
@@ -178,12 +177,12 @@ span{
     border-radius: 40px;
     border: 5px solid transparent;
     cursor: pointer;
-    transition: 0.4s ease-in-out;
 }
 
 .services-box:hover {
     background: rgb(73, 27, 27);
     border: 5px solid rgb(148, 53, 53);
+    transition: 0.4s ease-in-out;
 }
 
 .services-info h4 {
@@ -256,6 +255,70 @@ section.sobre .img-sobre img{
 section.projetos{ 
     padding: 134px 4%;
     font-family: "Poppins", sans-serif;
+}
+
+.box-projeto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    place-items: center;
+    gap: 3rem;
+    row-gap: 5rem;
+    margin: 30px 0 0 0;
+}
+
+.card-projeto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    border: 4px solid rgb(148, 53, 53);
+    border-radius: 3rem;
+    gap: 20px;
+    padding: 5rem 2rem;
+    box-shadow: 0 0 5px rgb(148, 53, 53);
+    color: #ffffff;
+}
+
+.card-projeto:hover {
+    box-shadow: 0 0 25px rgb(148, 53, 53);
+    transition: 0.6s;
+}
+
+.card-projeto img {
+    max-width: 350px;
+    border-radius: 2em;
+    object-fit: cover;
+}
+
+.card-projeto h3 {
+    font-size: 3rem;
+}
+
+.card-projeto p {
+    font-size: 1.6rem;
+}
+
+.btn button {
+    background: transparent;
+    border-radius: 20px;
+    border: 2px solid rgb(148, 53, 53);
+    padding: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    transform: scale(1.10);
+    transition: 0.5s;
+    box-shadow: 0 0 12px rgb(124, 45, 45);
+    background: rgb(148, 53, 53);
+}
+
+
+.btn button a {
+    text-decoration: none;
+    color: var(--color-txt);
 }
 
 /* CONTATO */
@@ -678,15 +741,60 @@ form .btn-enviar input:hover{
     }
 
 /* MEUS PROJETOS */
-section.projetos .flex{
-    justify-content: center;
-    flex-wrap: wrap;
+.box-projeto {
+    display: grid;
+    place-items: center;
+    gap: 16px;
+    row-gap: 30px;
+    margin: 10px 0 0 0;
 }
 
-.img-pj{
-    width: 340px;
-    height: 260px;
-    background-color: rgb(124, 45, 45);
+.card-projeto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    border: 3px solid rgb(148, 53, 53);
+    border-radius: 3rem;
+    gap: 10px;
+    padding: 2rem 1rem;
+    box-shadow: 0 0 5px rgb(148, 53, 53);
+    color: #ffffff;
+}
+
+.card-projeto:hover {
+    box-shadow: 0 0 25px rgb(148, 53, 53);
+    transition: 0.6s;
+}
+
+.card-projeto img {
+    max-width: 200px;
+    border-radius: 1em;
+    object-fit: cover;
+}
+
+.card-projeto h3 {
+    font-size: 20px;
+}
+
+.card-projeto p {
+    font-size: 15px;
+}
+
+.btn button {
+    background: transparent;
+    border-radius: 20px;
+    border: 2px solid rgb(148, 53, 53);
+    padding: 10px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    transform: none;
+    transition: none;
+    box-shadow: none;
 }
 
 /* CONTATO */
@@ -869,8 +977,8 @@ form{
 }
 
 form .btn-enviar input{
-    width: 73px;
-    font-size: 12px;
+    width: 80px;
+    font-size: 11px;
 }
 
 form .btn-enviar input:hover{
