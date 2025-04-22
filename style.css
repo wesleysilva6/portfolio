@@ -259,7 +259,7 @@ section.projetos{
 
 .box-projeto {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     place-items: center;
     gap: 3rem;
     row-gap: 5rem;
@@ -576,6 +576,7 @@ footer{
 
 /* MEUS PROJETOS */
 .box-projeto {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 16px;
     row-gap: 30px;
     margin: 10px 0 0 0;
@@ -781,6 +782,7 @@ form .btn-enviar input:hover{
 
 /* MEUS PROJETOS */
 .box-projeto {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 16px;
     row-gap: 30px;
     margin: 10px 0 0 0;
@@ -810,7 +812,7 @@ form .btn-enviar input:hover{
 }
 
 .card-projeto p {
-    font-size: 15px;
+    font-size: 10px;
 }
 
 .btn button {
