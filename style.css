@@ -40,7 +40,7 @@ body{
 
 /* ESTILO CABEÇALHO */
 header{
-    padding: 40px 4%;
+    padding: 2.5rem 4%;
     font-family: "Poppins", sans-serif;
 }
 
@@ -61,7 +61,7 @@ header nav ul{
 
 header nav ul li{
     display: inline-block;
-    padding: 0 40px;
+    padding: 0 2.5rem;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
 }
@@ -69,17 +69,17 @@ header nav ul li{
 .menu-desktop a{
     color: var(--color-txt);
     border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
 }
 
 .menu-desktop a:hover, .menu-desktop a:active{
     color: rgb(148, 53, 53);
     border-bottom: 3px solid rgb(148, 53, 53);
-    transition: 0.3s ease;
 }
 
 /* ESTILO TOPO SITE */
 #inicio{
-    padding: 130px 1%;
+    padding: 8rem 1%;
 }
 
 #inicio .flex{
@@ -87,14 +87,14 @@ header nav ul li{
     justify-content: space-between;
 }
 
-#inicio .img-topo-site img {
-    width: 400px;
+.img-topo-site img {
+    width: 25rem;
     border-radius: 50%;
+    transition: 0.4s ease-in-out;
 }
 
 .img-topo-site:hover {
     transform: scale(1.10);
-    transition: 0.4s ease-in-out;
 }
 
 .txt-topo-site button{
@@ -106,11 +106,11 @@ header nav ul li{
     cursor: pointer;
     font-size: 15px;
     margin: 12px 8px;
+    transition: all 0.3s ease;
 }
 
 .txt-topo-site button:hover{
     transform: scale(1.25);
-    transition: 0.3s;
     box-shadow: 0 0 25px rgb(148, 53, 53);
     background: rgb(148, 53, 53);
 }
@@ -177,12 +177,12 @@ span{
     border-radius: 40px;
     border: 5px solid transparent;
     cursor: pointer;
+    transition: 0.4s ease-in-out;
 }
 
 .services-box:hover {
     background: rgb(73, 27, 27);
     border: 5px solid rgb(148, 53, 53);
-    transition: 0.4s ease-in-out;
 }
 
 .services-info h4 {
@@ -229,7 +229,6 @@ span{
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     place-items: center;
     gap: 3rem;
-    row-gap: 5rem;
     margin: 30px 0 0 0;
 }
 
@@ -245,11 +244,11 @@ span{
     padding: 5rem 2rem;
     box-shadow: 0 0 5px rgb(148, 53, 53);
     color: var(--color-txt);
+    transition: 0.6s;
 }
 
 .card-projeto:hover {
     box-shadow: 0 0 25px rgb(148, 53, 53);
-    transition: 0.6s;
 }
 
 .card-projeto img {
@@ -274,11 +273,11 @@ span{
     font-size: 15px;
     cursor: pointer;
     color: var(--color-txt);
+        transition: 0.5s;
 }
 
 .btn button:hover {
     transform: scale(1.10);
-    transition: 0.5s;
     box-shadow: 0 0 12px rgb(124, 45, 45);
     background: rgb(148, 53, 53);
 }
@@ -314,11 +313,11 @@ form input, form textarea{
     font-size: 18px;
     color: var(--color-txt);
     border: 2px solid rgb(148, 53, 53);
+    transition: 0.6s ease-in-out;
 }
 
 form input:hover {
     transform: scale(1.07);
-    transition: 0.6s ease-in-out;
     box-shadow: 0 0 15px rgb(148, 53, 53);
 }
 
@@ -341,11 +340,11 @@ form .btn-enviar{
 form .btn-enviar input{
     width: 120px;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 form .btn-enviar input:hover{
     transform: scale(1.10);
-    transition: 0.5s;
     box-shadow: 0 0 12px rgb(124, 45, 45);
     background: rgb(148, 53, 53);
 }
@@ -393,11 +392,12 @@ footer{
     cursor: pointer;
     padding: 6px;
     font-size: 12px;
+    transition: 0.3s;
 }
 
 .btn-footer button:hover{
     transform: scale(1.30);
-    transition: 0.3s;
+
     box-shadow: 0 0 25px rgb(148, 53, 53);
     background-color: rgb(148, 53, 53);
 }
@@ -418,13 +418,13 @@ footer{
     }
 
 /* ESTILO TOPO SITE */
-    #inicio .img-topo-site img {
+    .img-topo-site img {
         width: 250px;
+        transition: none;
     }
 
     .img-topo-site:hover {
         transform: none;
-        transition: none;
     }
 
     #inicio .flex{
@@ -455,11 +455,11 @@ footer{
         font-size: 12px;
         margin: 10px 8px 0 10px;    
         margin-top: 12px;
+        transition: none;
     }
 
     .txt-topo-site button:hover{
         transform: none;
-        transition: none;
         box-shadow: none;
     }
 
@@ -536,11 +536,11 @@ footer{
     gap: 10px;
     padding: 32px 16px;
     box-shadow: none;
+    transition: none;
 }
 
 .card-projeto:hover {
     box-shadow: none;
-    transition: none;
 }
 
 .card-projeto img {
@@ -559,11 +559,11 @@ footer{
 .btn button {
     padding: 10px;
     font-size: 10px;
+    transition: none;
 }
 
 .btn button:hover {
     transform: none;
-    transition: none;
     box-shadow: none;
 }
 
@@ -583,16 +583,22 @@ form{
     font-size: 13px;
 }
 
+form .btn-enviar input {
+    transition: none;
+}
+
 form .btn-enviar input:hover{
     transform: none;
-    transition: none;
     box-shadow: none;
 }
 
 /* FOOTER */
+.btn-footer button {
+    transition: none;
+}
+
 .btn-footer button:hover{
     transform: none;
-    transition: none;
     box-shadow: none;
     background-color: #111111;
 }
@@ -604,13 +610,13 @@ form .btn-enviar input:hover{
     }
 
 /* ESTILO TOPO SITE */
-    #inicio .img-topo-site img {
+    .img-topo-site img {
         width: 200px;
+        transition: none;
     }
 
     .img-topo-site:hover {
         transform: none;
-        transition: none;
     }
 
     #inicio .flex{
@@ -641,11 +647,11 @@ form .btn-enviar input:hover{
         font-size: 12px;
         margin: 10px 8px 0 10px;    
         margin-top: 12px;
+        transition: none;
     }
 
     .txt-topo-site button:hover{
         transform: none;
-        transition: none;
         box-shadow: none;
     }
 
@@ -705,11 +711,11 @@ form .btn-enviar input:hover{
     gap: 10px;
     padding: 32px 16px;
     box-shadow: none;
+    transition: none;
 }
 
 .card-projeto:hover {
     box-shadow: none;
-    transition: none;
 }
 
 .card-projeto img {
@@ -728,11 +734,11 @@ form .btn-enviar input:hover{
 .btn button {
     padding: 10px;
     font-size: 10px;
+    transition: none;
 }
 
 .btn button:hover {
     transform: none;
-    transition: none;
     box-shadow: none;
 }
 
@@ -748,18 +754,21 @@ form{
 form .btn-enviar input{
     width: 100px;
     font-size: 15px;
+    transition: none;
 }
 
 form .btn-enviar input:hover{
     transform: none;
-    transition: none;
     box-shadow: none;
 }
 
 /* FOOTER */
+.btn-footer button {
+    transition: none;
+}
+
 .btn-footer button:hover{
     transform: none;
-    transition: none;
     box-shadow: none;
     background-color: #111111;
 }
@@ -771,13 +780,13 @@ form .btn-enviar input:hover{
     }
 
 /* ESTILO TOPO SITE */
-    #inicio .img-topo-site img {
+    .img-topo-site img {
         width: 160px;
+        transition: none;
     }
 
     .img-topo-site:hover {
         transform: none;
-        transition: none;
     }
 
     #inicio .flex{
@@ -807,12 +816,12 @@ form .btn-enviar input:hover{
     .txt-topo-site button{
         padding: 7px;
         font-size: 10px;
-        margin: 10px 2px 20px 12px;    
+        margin: 10px 2px 20px 12px;
+        transition: none;
     }
 
     .txt-topo-site button:hover{
         transform: none;
-        transition: none;
         box-shadow: none;
     }
 
@@ -889,11 +898,11 @@ form .btn-enviar input:hover{
     gap: 7px;
     padding: 25px 12px;
     box-shadow: none;
+    transition: none;
 }
 
 .card-projeto:hover {
     box-shadow: none;
-    transition: none;
 }
 
 .card-projeto img {
@@ -912,11 +921,11 @@ form .btn-enviar input:hover{
 .btn button {
     padding: 8px;
     font-size: 7px;
+    transition: none;
 }
 
 .btn button:hover {
     transform: none;
-    transition: none;
     box-shadow: none;
 }
 
@@ -932,18 +941,21 @@ form{
 form .btn-enviar input{
     width: 80px;
     font-size: 11px;
+    transition: none;
 }
 
 form .btn-enviar input:hover{
     transform: none;
-    transition: none;
     box-shadow: none;
 }
 
 /* FOOTER */
+.btn-footer button {
+    transition: none;
+}
+
 .btn-footer button:hover{
     transform: none;
-    transition: none;
     box-shadow: none;
     background-color: #111111;
 }
@@ -955,13 +967,13 @@ form .btn-enviar input:hover{
     }
 
 /* ESTILO TOPO SITE */
-    section.topo-site .img-topo-site img {
+    #inicio .img-topo-site img {
         width: 160px;
+        transition: none;
     }
 
     .img-topo-site:hover {
         transform: none;
-        transition: none;
     }
 
     #inicio .flex{
@@ -1073,11 +1085,11 @@ form .btn-enviar input:hover{
     gap: 7px;
     padding: 25px 12px;
     box-shadow: none;
+    transition: none;
 }
 
 .card-projeto:hover {
     box-shadow: none;
-    transition: none;
 }
 
 .card-projeto img {
@@ -1096,11 +1108,11 @@ form .btn-enviar input:hover{
 .btn button {
     padding: 8px;
     font-size: 7px;
+    transition: none;
 }
 
 .btn button:hover {
     transform: none;
-    transition: none;
     box-shadow: none;
 }
 
@@ -1116,18 +1128,21 @@ form{
 form .btn-enviar input{
     width: 80px;
     font-size: 11px;
+    transition: none;
 }
 
 form .btn-enviar input:hover{
     transform: none;
-    transition: none;
     box-shadow: none;
 }
 
 /* FOOTER */
+.btn-footer button {
+    transition: none;
+}
+
 .btn-footer button:hover{
     transform: none;
-    transition: none;
     box-shadow: none;
     background-color: #111111;
 }
