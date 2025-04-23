@@ -11,7 +11,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(148, 53, 53);
+    background: rgb(148, 53, 53);
 }
 
 *{
@@ -25,7 +25,7 @@ html {
 }
 
 body{
-    background-color: var(--color-background);
+    background-color: #000;
     width: 100%;
 }
 
@@ -78,7 +78,16 @@ header nav ul li{
 }
 
 /* ESTILO TOPO SITE */
-section.topo-site .img-topo-site img {
+#inicio{
+    padding: 130px 1%;
+}
+
+#inicio .flex{
+    align-items: center;
+    justify-content: space-between;
+}
+
+#inicio .img-topo-site img {
     width: 400px;
     border-radius: 50%;
 }
@@ -86,15 +95,6 @@ section.topo-site .img-topo-site img {
 .img-topo-site:hover {
     transform: scale(1.10);
     transition: 0.4s ease-in-out;
-}
-
-section.topo-site{
-    padding: 130px 1%;
-}
-
-section.topo-site .flex{
-    align-items: center;
-    justify-content: space-between;
 }
 
 .txt-topo-site button{
@@ -149,7 +149,7 @@ span{
 }
 
 /*SERVIÇOS*/
-.services {
+#servicos {
     padding: 80px 4%;
     background: #0e0e0e3a;
     color: var(--color-txt);
@@ -157,7 +157,7 @@ span{
     text-align: left;
 }
 
-.services h2{
+#servicos h2{
     margin-bottom: 5rem;
     color: var(--color-txt);
     font-family: "Poppins", sans-serif;
@@ -199,41 +199,8 @@ span{
     margin: 0 20px 0 10px;
 }
 
-/* MINHAS SKILS */
-section.skils{
-    padding: 141px 4%;
-    font-family: "Poppins", sans-serif;
-}
-
-.txt-skils{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.container{ 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-.card{
-    border: 5px solid rgb(148, 53, 53);
-    border-radius: 20px;
-}
-
-.card img {
-    width: 100px;
-}
-
-.card img:hover{
-    transform: scale(1.08);
-    transition: 0.3s;
-}
-
 /* SOBRE */
-section.sobre {
+#sobre {
     padding: 120px 4%;
     font-family: "Poppins", sans-serif;
     background: #0e0e0e3a;
@@ -246,13 +213,13 @@ section.sobre {
     padding: 30px;
 }
 
-section.sobre .img-sobre img{
+#sobre .img-sobre img{
     width: 500px;
     border-radius: 50%;
 }
 
 /* MEUS PROJETOS */
-section.projetos{ 
+#projetos{ 
     padding: 134px 4%;
     font-family: "Poppins", sans-serif;
 }
@@ -277,7 +244,7 @@ section.projetos{
     gap: 20px;
     padding: 5rem 2rem;
     box-shadow: 0 0 5px rgb(148, 53, 53);
-    color: #ffffff;
+    color: var(--color-txt);
 }
 
 .card-projeto:hover {
@@ -316,14 +283,13 @@ section.projetos{
     background: rgb(148, 53, 53);
 }
 
-
 .btn button a {
     text-decoration: none;
     color: var(--color-txt);
 }
 
 /* CONTATO */
-section.formulario{
+#contato{
     padding: 80px 4%;
     font-family: "Poppins", sans-serif;
     background: #0e0e0e3a;
@@ -452,7 +418,7 @@ footer{
     }
 
 /* ESTILO TOPO SITE */
-    section.topo-site .img-topo-site img {
+    #inicio .img-topo-site img {
         width: 250px;
     }
 
@@ -461,7 +427,7 @@ footer{
         transition: none;
     }
 
-    section.topo-site .flex{
+    #inicio .flex{
         justify-content: center;
         flex-wrap: wrap-reverse;
     }
@@ -481,7 +447,6 @@ footer{
     }
 
     .txt-topo-site p{
-        color: #fff;
         margin-left: 10px;
     }
 
@@ -496,18 +461,15 @@ footer{
         transform: none;
         transition: none;
         box-shadow: none;
-        background-color: black;
-        color: #ffffff;
     }
 
     h2.titulo{
-        color: #fff;
         font-size: 28px;
         text-align: center;
     }
 
 /* SERVIÇOS */
-.services {
+#servicos {
     padding: 40px 4%;
     background: #0e0e0e3a;
 }
@@ -543,36 +505,22 @@ footer{
     margin: 0 18px 0 22px;
 }
 
-/* MINHAS SKILS */
-    .container{
-        margin: 20px;
-    }
-
-    .card img {
-        width: 80px;
-    }
-
-    .card img:hover{
-        transform: none;
-        transition: none;
-    }
-
 /* SOBRE */
-    section.sobre .flex{
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+#sobre .flex{
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
-    section.sobre .img-sobre img{
-        width: 300px;
-        margin: 30px;
-    }
+#sobre .img-sobre img{
+    width: 300px;
+    margin: 30px;
+}
 
-    .txt-sobre{
-        font-size: 12px;
-        text-align: left;
-        margin: 1px 10px 0 10px;
-    }
+.txt-sobre{
+    font-size: 12px;
+    text-align: left;
+    margin: 1px 10px 0 10px;
+}
 
 /* MEUS PROJETOS */
 .box-projeto {
@@ -588,7 +536,6 @@ footer{
     gap: 10px;
     padding: 32px 16px;
     box-shadow: none;
-    color: #ffffff;
 }
 
 .card-projeto:hover {
@@ -648,7 +595,6 @@ form .btn-enviar input:hover{
     transition: none;
     box-shadow: none;
     background-color: #111111;
-    color: #ffffff;
 }
 }
 
@@ -658,7 +604,7 @@ form .btn-enviar input:hover{
     }
 
 /* ESTILO TOPO SITE */
-    section.topo-site .img-topo-site img {
+    #inicio .img-topo-site img {
         width: 200px;
     }
 
@@ -667,7 +613,7 @@ form .btn-enviar input:hover{
         transition: none;
     }
 
-    section.topo-site .flex{
+    #inicio .flex{
         justify-content: center;
         flex-wrap: wrap-reverse;
     }
@@ -687,7 +633,6 @@ form .btn-enviar input:hover{
     }
 
     .txt-topo-site p{
-        color: #fff;
         margin-left: 10px;
     }
 
@@ -702,18 +647,15 @@ form .btn-enviar input:hover{
         transform: none;
         transition: none;
         box-shadow: none;
-        background-color: black;
-        color: #ffffff;
     }
 
     h2.titulo{
-        color: #fff;
         font-size: 28px;
         text-align: center;
     }
 
 /* SERVIÇOS */
-.services {
+#servicos {
     padding: 40px 4%;
     background: #0e0e0e3a;
 }
@@ -749,37 +691,6 @@ form .btn-enviar input:hover{
     margin: 0 12px 0 12px;
 }
 
-/* MINHAS SKILS */
-    .container{
-        margin: 20px;
-    }
-
-    .card img {
-        width: 80px;
-    }
-
-    .card img:hover{
-        transform: none;
-        transition: none;
-    }
-
-/* SOBRE */
-    section.sobre .flex{
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    section.sobre .img-sobre img{
-        width: 300px;
-        margin: 30px;
-    }
-
-    .txt-sobre{
-        font-size: 12px;
-        text-align: left;
-        margin: 1px 10px 0 10px;
-    }
-
 /* MEUS PROJETOS */
 .box-projeto {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -794,7 +705,6 @@ form .btn-enviar input:hover{
     gap: 10px;
     padding: 32px 16px;
     box-shadow: none;
-    color: #ffffff;
 }
 
 .card-projeto:hover {
@@ -852,7 +762,6 @@ form .btn-enviar input:hover{
     transition: none;
     box-shadow: none;
     background-color: #111111;
-    color: #ffffff;
 }
 }
 
@@ -862,7 +771,7 @@ form .btn-enviar input:hover{
     }
 
 /* ESTILO TOPO SITE */
-    section.topo-site .img-topo-site img {
+    #inicio .img-topo-site img {
         width: 160px;
     }
 
@@ -871,7 +780,7 @@ form .btn-enviar input:hover{
         transition: none;
     }
 
-    section.topo-site .flex{
+    #inicio .flex{
         justify-content: center;
         flex-wrap: wrap-reverse;
     }
@@ -891,7 +800,6 @@ form .btn-enviar input:hover{
     }
 
     .txt-topo-site p{
-        color: #fff;
         margin: 0 0 0 10px;
         font-size: 13px;
     }
@@ -906,18 +814,15 @@ form .btn-enviar input:hover{
         transform: none;
         transition: none;
         box-shadow: none;
-        background-color: black;
-        color: #ffffff;
     }
 
     h2.titulo{
-        color: #fff;
         font-size: 24px;
         text-align: center;
     }
 
 /* SERVIÇOS */
-.services {
+#servicos {
     padding: 100px 4%;
     background: #0e0e0e3a;
 }
@@ -953,27 +858,13 @@ form .btn-enviar input:hover{
     margin: 0 12px 0 12px;
 }
 
-/* MINHAS SKILS */
-    .container{
-        margin: 20px;
-    }
-
-    .card img {
-        width: 70px;
-    }
-
-    .card img:hover{
-        transform: none;
-        transition: none;
-    }
-
 /* SOBRE */
-    section.sobre .flex{
+    #sobre .flex{
         justify-content: center;
         flex-wrap: wrap;
     }
 
-    section.sobre .img-sobre img{
+    #sobre .img-sobre img{
         width: 300px;
         margin: 30px;
     }
@@ -1055,7 +946,6 @@ form .btn-enviar input:hover{
     transition: none;
     box-shadow: none;
     background-color: #111111;
-    color: #ffffff;
 }
 }
 
@@ -1074,7 +964,7 @@ form .btn-enviar input:hover{
         transition: none;
     }
 
-    section.topo-site .flex{
+    #inicio .flex{
         justify-content: center;
         flex-wrap: wrap-reverse;
     }
@@ -1094,7 +984,6 @@ form .btn-enviar input:hover{
     }
 
     .txt-topo-site p{
-        color: #fff;
         margin: 0 0 0 10px;
         font-size: 13px;
     }
@@ -1109,18 +998,15 @@ form .btn-enviar input:hover{
         transform: none;
         transition: none;
         box-shadow: none;
-        background-color: black;
-        color: #ffffff;
     }
 
     h2.titulo{
-        color: #fff;
         font-size: 24px;
         text-align: center;
     }
 
 /* SERVIÇOS */
-.services {
+#servicos {
     padding: 100px 4%;
     background: #0e0e0e3a;
 }
@@ -1156,27 +1042,13 @@ form .btn-enviar input:hover{
     margin: 0 12px 0 12px;
 }
 
-/* MINHAS SKILS */
-    .container{
-        margin: 20px;
-    }
-
-    .card img {
-        width: 70px;
-    }
-
-    .card img:hover{
-        transform: none;
-        transition: none;
-    }
-
 /* SOBRE */
-    section.sobre .flex{
+    #sobre .flex{
         justify-content: center;
         flex-wrap: wrap;
     }
 
-    section.sobre .img-sobre img{
+    #sobre .img-sobre img{
         width: 300px;
         margin: 30px;
     }
@@ -1258,6 +1130,5 @@ form .btn-enviar input:hover{
     transition: none;
     box-shadow: none;
     background-color: #111111;
-    color: #ffffff;
 }
 }
