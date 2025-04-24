@@ -87,14 +87,9 @@ header nav ul li{
     justify-content: space-between;
 }
 
-.img-topo-site img {
+#inicio .img-topo-site img {
     width: 25rem;
     border-radius: 50%;
-    transition: 0.4s ease-in-out;
-}
-
-.img-topo-site:hover {
-    transform: scale(1.10);
 }
 
 .txt-topo-site button {
@@ -181,7 +176,7 @@ span{
 }
 
 .services-box:hover {
-    background: rgb(73, 27, 27);
+    background: rgb(105, 39, 39);
     border: 5px solid rgb(148, 53, 53);
 }
 
@@ -220,7 +215,7 @@ span{
 
 /* MEUS PROJETOS */
 #projetos{ 
-    padding: 134px 4%;
+    padding: 8rem 4%;
     font-family: "Poppins", sans-serif;
 }
 
@@ -313,7 +308,7 @@ form input, form textarea{
     font-size: 1rem;
     color: var(--color-txt);
     border: 2px solid rgb(148, 53, 53);
-    transition: 0.6s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 
 form input:hover {
@@ -328,7 +323,6 @@ form textarea{
 
 form textarea:hover {
     transform: scale(1.08);
-    transition: 0.6s;
     box-shadow: 0 0 15px rgb(148, 53, 53);
 }
 
@@ -392,7 +386,7 @@ footer{
     cursor: pointer;
     padding: 6px;
     font-size: 12px;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 .btn-footer button:hover{
