@@ -122,11 +122,6 @@ header nav ul li{
     font-family: "Archivo", sans-serif;
 }
 
-.txt-topo-site h3{
-    color: var(--color-txt);
-    font-family: "Archivo", sans-serif;
-}
-
 .txt-topo-site p{
     color: var(--color-txt);
     font-family: "Archivo", sans-serif;
@@ -808,7 +803,7 @@ form .btn-enviar input:hover{
     }
 
     .txt-topo-site h1{
-        font-size: 30px;
+        font-size: 1.56rem;
         margin: 0 10px 0 10px;
     }
 
