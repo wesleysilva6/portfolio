@@ -86,7 +86,7 @@ header nav ul li{
 
 /* ESTILO TOPO SITE */
 #inicio{
-    padding: 8rem 1%;
+    padding: 8rem 4%;
 }
 
 #inicio .flex{
@@ -97,6 +97,7 @@ header nav ul li{
     width: 25rem;
     height: 22rem;
     border-radius: 50%;
+    padding-bottom: 2rem;
 }
 
 .txt-topo-site button {
@@ -243,7 +244,6 @@ header nav ul li{
 .card-projeto img {
     max-width: 350px;
     border-radius: 2em;
-    object-fit: cover;
 }
 
 .card-projeto h3 {
@@ -399,9 +399,8 @@ footer{
     }
 
     /* ESTILO TOPO SITE */
-    .img-topo-site img {
-        width: 250px;
-        transition: none;
+    #inicio {
+        padding: 5rem 1%;
     }
 
     .img-topo-site:hover {
@@ -490,11 +489,6 @@ footer{
 #sobre .flex{
     justify-content: center;
     flex-wrap: wrap;
-}
-
-#sobre .img-sobre img{
-    width: 300px;
-    margin: 2rem;
 }
 
 .txt-sobre{
@@ -598,7 +592,6 @@ form .btn-enviar input:hover{
     #inicio .img-topo-site img {
         width: 22rem;
         height: 22rem;
-        margin-bottom: 4rem;
     }
 
     
@@ -786,7 +779,6 @@ form .btn-enviar input:hover{
     #inicio .img-topo-site img {
         width: 20rem;
         height: 20rem;
-        margin-bottom: 4rem;
     }
 
     
@@ -957,13 +949,13 @@ form .btn-enviar input:hover{
     }
 
 /* ESTILO TOPO SITE */
-#inicio{
+    #inicio{
     padding: 2rem 4%;
 }
 
     .img-topo-site img {
-        width: 160px;
-        transition: none;
+        width: 18rem;
+        height: 18rem;
     }
 
     #inicio .flex{
@@ -1144,8 +1136,8 @@ form .btn-enviar input:hover{
 
 /* ESTILO TOPO SITE */
     #inicio .img-topo-site img {
-        width: 160px;
-        transition: none;
+        width: 18rem;
+        height: 18rem;
     }
 
     .img-topo-site:hover {
