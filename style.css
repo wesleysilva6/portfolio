@@ -89,6 +89,7 @@ header nav ul li{
 
 #inicio .img-topo-site img {
     width: 25rem;
+    height: 22rem;
     border-radius: 50%;
 }
 
@@ -191,7 +192,7 @@ span{
 
 /* SOBRE */
 #sobre {
-    padding: 7.5rem 4%;
+    padding: 6rem 4%;
     font-family: "Poppins", sans-serif;
     background: #0e0e0e3a;
 }
@@ -204,7 +205,8 @@ span{
 }
 
 #sobre .img-sobre img{
-    width: 500px;
+    width: 25rem;
+    height: 22rem;
     border-radius: 50%;
 }
 
@@ -592,19 +594,16 @@ form .btn-enviar input:hover{
     }
 
 /* ESTILO TOPO SITE */
-    .img-topo-site img {
-        width: 250px;
-        transition: none;
+    #inico {
+        padding: 2rem 4%;
     }
 
-    .img-topo-site:hover {
-        transform: none;
+    #inicio .img-topo-site img {
+        width: 22rem;
+        height: 22rem;
+        margin-bottom: 4rem;
     }
 
-    #inicio .flex{
-        justify-content: center;
-        flex-wrap: wrap-reverse;
-    }
     
     .txt-topo-site button{
         margin: 1px 2px;
@@ -680,14 +679,13 @@ form .btn-enviar input:hover{
 }
 
 /* SOBRE */
-#sobre .flex{
-    justify-content: center;
-    flex-wrap: wrap;
+#sobre {
+    padding: 5rem 4%
 }
 
 #sobre .img-sobre img{
-    width: 300px;
-    margin: 30px;
+    width: 22rem;
+    height: 22rem;
 }
 
 .txt-sobre{
@@ -784,19 +782,16 @@ form .btn-enviar input:hover{
     }
 
 /* ESTILO TOPO SITE */
-    .img-topo-site img {
-        width: 200px;
-        transition: none;
+#inicio{
+    padding: 4rem 1%;
+}
+
+    #inicio .img-topo-site img {
+        width: 20rem;
+        height: 20rem;
+        margin-bottom: 4rem;
     }
 
-    .img-topo-site:hover {
-        transform: none;
-    }
-
-    #inicio .flex{
-        justify-content: center;
-        flex-wrap: wrap-reverse;
-    }
     
     .txt-topo-site button{
         margin: 1px 2px;
@@ -869,6 +864,17 @@ form .btn-enviar input:hover{
     font-weight: 400;
     line-height: 1.0;
     margin: 0 12px 0 12px;
+}
+
+/* SOBRE */
+#sobre {
+    padding: 5rem 4%;
+}
+
+#sobre .img-sobre img{
+    width: 19rem;
+    height: 19rem;
+    border-radius: 50%;
 }
 
 /* MEUS PROJETOS */
@@ -954,13 +960,13 @@ form .btn-enviar input:hover{
     }
 
 /* ESTILO TOPO SITE */
+#inicio{
+    padding: 2rem 4%;
+}
+
     .img-topo-site img {
         width: 160px;
         transition: none;
-    }
-
-    .img-topo-site:hover {
-        transform: none;
     }
 
     #inicio .flex{
@@ -1006,7 +1012,7 @@ form .btn-enviar input:hover{
 
 /* SERVIÇOS */
 #servicos {
-    padding: 100px 4%;
+    padding: 2.5rem 4%;
     background: #0e0e0e3a;
 }
 
@@ -1042,9 +1048,8 @@ form .btn-enviar input:hover{
 }
 
 /* SOBRE */
-    #sobre .flex{
-        justify-content: center;
-        flex-wrap: wrap;
+    #sobre {
+        padding: 4rem 4%;
     }
 
     #sobre .img-sobre img{
