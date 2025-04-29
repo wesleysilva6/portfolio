@@ -23,8 +23,7 @@ html {
 }
 
 body{
-    background-color: #000;
-    width: 100%;
+    background: var(--color-background);
 }
 
 h2.titulo{
@@ -346,7 +345,6 @@ footer{
 }
 
 .line-footer1{
-    text-align: center;
     border-bottom: 2px solid var(--color-txt);
     padding-bottom: 1.25rem;
 }
