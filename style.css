@@ -24,6 +24,7 @@ html {
 
 body{
     background: var(--color-background);
+    width: 100%;
 }
 
 h2.titulo{
@@ -56,7 +57,7 @@ header > .interface{
     justify-content: space-between;
 }
 
-header a, h4{
+header a, h4 {
     color: var(--color-txt);
     text-decoration: none;
 }
@@ -69,35 +70,31 @@ header nav ul li{
     display: inline-block;
     padding: 0 2.5rem;
     font-weight: 500;
-    font-family: "Poppins", sans-serif;
 }
 
-.menu-desktop a{
+nav a{
     color: var(--color-txt);
     border-bottom: 3px solid transparent;
     transition: all 0.3s ease;
 }
 
-.menu-desktop a:hover{
+nav a:hover{
     color: rgb(148, 53, 53);
     border-bottom: 3px solid rgb(148, 53, 53);
 }
 
 /* ESTILO TOPO SITE */
-#inicio{
+#inicio {
     padding: 8rem 4%;
+    font-family: "Archivo", sans-serif;
 }
 
-#inicio .flex{
-    align-items: center;
-}
-
-#inicio .img-topo-site img {
+/* #inicio .img-topo-site img { 
     width: 25rem;
     height: 22rem;
     border-radius: 50%;
     padding-bottom: 2rem;
-}
+}*/
 
 .txt-topo-site button {
     color: var(--color-txt);
@@ -120,19 +117,16 @@ header nav ul li{
 .txt-topo-site h1{
     color: var(--color-txt);
     font-size: 4rem;
-    font-family: "Archivo", sans-serif;
 }
 
 .txt-topo-site h2{
     color: rgb(148, 53, 53);
     font-size: 5rem;
-    font-family: "Archivo", sans-serif;
 }
 
 .txt-topo-site p{
     color: var(--color-txt);
-    font-family: "Archivo", sans-serif;
-    padding: 4px;
+    text-align: left;
 }
 
 /*SERVIÇOS*/
@@ -142,12 +136,12 @@ header nav ul li{
     color: var(--color-txt);
     justify-content: center;
     text-align: left;
+    font-family: "Poppins", sans-serif;
 }
 
 #servicos h2{
     margin-bottom: 5rem;
     color: var(--color-txt);
-    font-family: "Poppins", sans-serif;
     font-weight: 800;
 }
 
@@ -155,7 +149,6 @@ header nav ul li{
     display: grid;
     grid-template-columns: repeat(2,2fr);
     gap: 1.25rem;
-    font-family: "Poppins", sans-serif;
     height: 31.25rem;
 }
 
@@ -246,7 +239,7 @@ header nav ul li{
 }
 
 .card-projeto h3 {
-    font-size: 1.25px;
+    font-size: 1.25rem;
 }
 
 .card-projeto p {
@@ -275,7 +268,7 @@ header nav ul li{
     color: var(--color-txt);
 }
 
-/* CONTATO */
+/* CONTATO 
 #contato{
     padding: 5rem 4%;
     font-family: "Poppins", sans-serif;
@@ -334,7 +327,7 @@ form .btn-enviar input:hover{
     transform: scale(1.10);
     box-shadow: 0 0 12px rgb(124, 45, 45);
     background: rgb(148, 53, 53);
-}
+}*/
 
 /* FOOTER */
 footer{
@@ -346,7 +339,6 @@ footer{
 
 .line-footer1{
     border-bottom: 2px solid var(--color-txt);
-    padding-bottom: 1.25rem;
 }
 
 .line-footer2{
