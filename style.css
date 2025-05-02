@@ -50,6 +50,10 @@ span{
 header{
     padding: 2.5rem 4%;
     font-family: "Poppins", sans-serif;
+    position: fixed;
+    width: 100%;
+    background-color: #000;
+    z-index: 1000; 
 }
 
 header > .interface{
@@ -85,16 +89,13 @@ nav a:hover{
 
 /* ESTILO TOPO SITE */
 #inicio {
-    padding: 8rem 4%;
+    padding: 11rem 4%;
     font-family: "Archivo", sans-serif;
 }
 
-/* #inicio .img-topo-site img { 
-    width: 25rem;
-    height: 22rem;
-    border-radius: 50%;
-    padding-bottom: 2rem;
-}*/
+.txt-topo-site {
+    margin-top: 8rem;
+}
 
 .txt-topo-site button {
     color: var(--color-txt);
@@ -121,7 +122,7 @@ nav a:hover{
 
 .txt-topo-site h2{
     color: rgb(148, 53, 53);
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .txt-topo-site p{
@@ -131,7 +132,7 @@ nav a:hover{
 
 /*SERVIÇOS*/
 #servicos {
-    padding: 5rem 4%;
+    padding: 7rem 4%;
     background: #0e0e0e3a;
     color: var(--color-txt);
     justify-content: center;
@@ -149,7 +150,7 @@ nav a:hover{
     display: grid;
     grid-template-columns: repeat(2,2fr);
     gap: 1.25rem;
-    height: 31.25rem;
+    height: 21.25rem;
 }
 
 .services-box {
@@ -166,6 +167,7 @@ nav a:hover{
 }
 
 .services-info h4 {
+    margin-top: 1rem;
     font-size: 3rem;
     font-weight: 800;
     line-height: 2;
@@ -182,7 +184,7 @@ nav a:hover{
 
 /* SOBRE */
 #sobre {
-    padding: 6rem 4%;
+    padding: 7rem 4%;
     font-family: "Poppins", sans-serif;
     background: #0e0e0e3a;
 }
@@ -268,67 +270,6 @@ nav a:hover{
     color: var(--color-txt);
 }
 
-/* CONTATO 
-#contato{
-    padding: 5rem 4%;
-    font-family: "Poppins", sans-serif;
-    background: #0e0e0e3a;
-}
-
-form{
-    max-width: 35rem;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1.25rem;
-    margin-top: 2rem;
-}
-
-form input, form textarea{
-    width: 100%;
-    background: transparent;
-    outline: 0;
-    padding: 1.25rem 1rem;
-    border-radius: 1.25rem;
-    font-size: 1rem;
-    color: var(--color-txt);
-    border: 2px solid rgb(148, 53, 53);
-    transition: 0.4s ease-in-out;
-}
-
-form input:hover {
-    transform: scale(1.07);
-    box-shadow: 0 0 15px rgb(148, 53, 53);
-}
-
-form textarea{
-    resize: none;
-    height: 12.5rem;
-}
-
-form textarea:hover {
-    transform: scale(1.08);
-    box-shadow: 0 0 15px rgb(148, 53, 53);
-}
-
-form .btn-enviar{
-    margin-top: 1.25rem;
-    text-align: center;
-}
-
-form .btn-enviar input{
-    width: 7.5rem;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-form .btn-enviar input:hover{
-    transform: scale(1.10);
-    box-shadow: 0 0 12px rgb(124, 45, 45);
-    background: rgb(148, 53, 53);
-}*/
-
 /* FOOTER */
 footer{
     padding: 5rem 4%;
@@ -385,18 +326,13 @@ footer{
         display: none;
     }
 
+    header{
+        position: absolute;
+    }
+
     /* ESTILO TOPO SITE */
     #inicio {
         padding: 5rem 1%;
-    }
-
-    .img-topo-site:hover {
-        transform: none;
-    }
-
-    #inicio .flex{
-        justify-content: center;
-        flex-wrap: wrap-reverse;
     }
     
     .txt-topo-site button{
@@ -414,14 +350,13 @@ footer{
     }
 
     .txt-topo-site p{
-        margin-left: 10px;
+        margin: 10px 10px;
     }
 
     .txt-topo-site button{
         padding: 7px;
         font-size: 12px;
-        margin: 10px 8px 0 10px;    
-        margin-top: 12px;
+        margin: 10px 10px;    
         transition: none;
     }
 
@@ -446,7 +381,7 @@ footer{
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
     font-family: "Poppins", sans-serif;
-    height: 300px;
+    height: 14rem;
 }
 
 .services-box {
@@ -469,7 +404,7 @@ footer{
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.0;
-    margin: 0 18px 0 22px;
+    margin: 0 14px 0 14px;
 }
 
 /* SOBRE */
@@ -536,34 +471,6 @@ footer{
     background-color: rgb(124, 45, 45);
 }
 
-/* CONTATO */
-form{
-    max-width: 350px;
-}
-
-::placeholder{
-    font-size: 13px;
-}
-
-form .btn-enviar input {
-    transition: none;
-}
-
-form .btn-enviar input:hover{
-    transform: none;
-    box-shadow: none;
-}
-
-/* FOOTER */
-.btn-footer button {
-    transition: none;
-}
-
-.btn-footer button:hover{
-    transform: none;
-    box-shadow: none;
-    background-color: #111111;
-}
 }
 
 @media screen and (max-width:440px) {
@@ -571,17 +478,15 @@ form .btn-enviar input:hover{
         display: none;
     }
 
+    header{
+        position: absolute;
+    }
+
 /* ESTILO TOPO SITE */
     #inico {
         padding: 2rem 4%;
     }
 
-    #inicio .img-topo-site img {
-        width: 22rem;
-        height: 22rem;
-    }
-
-    
     .txt-topo-site button{
         margin: 1px 2px;
     }
@@ -597,7 +502,7 @@ form .btn-enviar input:hover{
     }
 
     .txt-topo-site p{
-        margin-left: 10px;
+        margin: 10px 10px 10px 10px;
     }
 
     .txt-topo-site button{
@@ -629,7 +534,7 @@ form .btn-enviar input:hover{
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
     font-family: "Poppins", sans-serif;
-    height: 300px;
+    height: 11rem;
 }
 
 .services-box {
@@ -642,7 +547,7 @@ form .btn-enviar input:hover{
 }
 
 .services-info h4 {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 800;
     line-height: 2;
     text-align: center;
@@ -652,7 +557,7 @@ form .btn-enviar input:hover{
     font-size: 10px;
     font-weight: 400;
     line-height: 1.0;
-    margin: 0 18px 0 22px;
+    margin: 0 12px 0 12px;
 }
 
 /* SOBRE */
@@ -723,24 +628,6 @@ form .btn-enviar input:hover{
     background-color: rgb(124, 45, 45);
 }
 
-/* CONTATO */
-form{
-    max-width: 350px;
-}
-
-::placeholder{
-    font-size: 13px;
-}
-
-form .btn-enviar input {
-    transition: none;
-}
-
-form .btn-enviar input:hover{
-    transform: none;
-    box-shadow: none;
-}
-
 /* FOOTER */
 .btn-footer button {
     transition: none;
@@ -758,17 +645,15 @@ form .btn-enviar input:hover{
         display: none;
     }
 
+    header{
+        position: absolute;
+    }
+
 /* ESTILO TOPO SITE */
 #inicio{
     padding: 4rem 1%;
 }
 
-    #inicio .img-topo-site img {
-        width: 20rem;
-        height: 20rem;
-    }
-
-    
     .txt-topo-site button{
         margin: 1px 2px;
     }
@@ -816,7 +701,7 @@ form .btn-enviar input:hover{
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
     font-family: "Poppins", sans-serif;
-    height: 300px;
+    height: 10rem;
 }
 
 .services-box {
@@ -829,7 +714,7 @@ form .btn-enviar input:hover{
 }
 
 .services-info h4 {
-    font-size: 30px;
+    font-size: 1rem;
     font-weight: 800;
     line-height: 2;
     text-align: center;
@@ -897,37 +782,6 @@ form .btn-enviar input:hover{
     transform: none;
     box-shadow: none;
 }
-
-/* CONTATO */
-form{
-    max-width: 300px;
-}
-
-::placeholder{
-    font-size: 13px;
-}
-
-form .btn-enviar input{
-    width: 100px;
-    font-size: 15px;
-    transition: none;
-}
-
-form .btn-enviar input:hover{
-    transform: none;
-    box-shadow: none;
-}
-
-/* FOOTER */
-.btn-footer button {
-    transition: none;
-}
-
-.btn-footer button:hover{
-    transform: none;
-    box-shadow: none;
-    background-color: #111111;
-}
 }
 
 @media screen and (max-width:365px) {
@@ -935,44 +789,38 @@ form .btn-enviar input:hover{
         display: none;
     }
 
+    header{
+        position: absolute;
+    }
+
 /* ESTILO TOPO SITE */
     #inicio{
     padding: 2rem 4%;
 }
 
-    .img-topo-site img {
-        width: 18rem;
-        height: 18rem;
-    }
-
-    #inicio .flex{
-        justify-content: center;
-        flex-wrap: wrap-reverse;
-    }
-    
     .txt-topo-site button{
         margin: 1px 2px;
     }
 
     .txt-topo-site h1{
         font-size: 26px;
-        margin: 0 12px 0 12px;
+        margin: 0 3px 0 3px;
     }
 
     .txt-topo-site h2{
         font-size: 28px;
-        margin: 0 12px 0 12px;
+        margin: 0 3px 0 3px;
     }
 
     .txt-topo-site p{
-        margin: 0 0 0 10px;
+        margin: 10px 3px 3px 3px;
         font-size: 13px;
     }
 
     .txt-topo-site button{
         padding: 7px;
         font-size: 10px;
-        margin: 10px 2px 20px 12px;
+        margin: 10px 2px 20px 3px;
         transition: none;
     }
 
@@ -997,7 +845,7 @@ form .btn-enviar input:hover{
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
     font-family: "Poppins", sans-serif;
-    height: 300px;
+    height: 10.5rem;
 }
 
 .services-box {
@@ -1010,7 +858,7 @@ form .btn-enviar input:hover{
 }
 
 .services-info h4 {
-    font-size: 23px;
+    font-size: 1rem;
     font-weight: 800;
     line-height: 2;
     text-align: center;
@@ -1083,37 +931,6 @@ form .btn-enviar input:hover{
     transform: none;
     box-shadow: none;
 }
-
-/* CONTATO */
-form{
-    max-width: 280px;
-}
-
-::placeholder{
-    font-size: 13px;
-}
-
-form .btn-enviar input{
-    width: 80px;
-    font-size: 11px;
-    transition: none;
-}
-
-form .btn-enviar input:hover{
-    transform: none;
-    box-shadow: none;
-}
-
-/* FOOTER */
-.btn-footer button {
-    transition: none;
-}
-
-.btn-footer button:hover{
-    transform: none;
-    box-shadow: none;
-    background-color: #111111;
-}
 }
 
 @media screen and (max-width:350px) {
@@ -1121,44 +938,34 @@ form .btn-enviar input:hover{
         display: none;
     }
 
+    header{
+        position: absolute;
+    }
+
 /* ESTILO TOPO SITE */
-    #inicio .img-topo-site img {
-        width: 18rem;
-        height: 18rem;
-    }
-
-    .img-topo-site:hover {
-        transform: none;
-    }
-
-    #inicio .flex{
-        justify-content: center;
-        flex-wrap: wrap-reverse;
-    }
-    
     .txt-topo-site button{
         margin: 1px 2px;
     }
 
     .txt-topo-site h1{
         font-size: 26px;
-        margin: 0 12px 0 12px;
+        margin: 0 4px 0 4px;
     }
 
     .txt-topo-site h2{
         font-size: 28px;
-        margin: 0 12px 0 12px;
+        margin: 0 4px 0 4px;
     }
 
     .txt-topo-site p{
-        margin: 0 0 0 10px;
+        margin: 15px 4px;
         font-size: 13px;
     }
 
     .txt-topo-site button{
         padding: 7px;
         font-size: 10px;
-        margin: 10px 2px 20px 5px;    
+        margin: 10px 4px 0px 4px;    
     }
 
     .txt-topo-site button:hover{
@@ -1183,7 +990,7 @@ form .btn-enviar input:hover{
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
     font-family: "Poppins", sans-serif;
-    height: 300px;
+    height: 10rem;
 }
 
 .services-box {
@@ -1196,7 +1003,7 @@ form .btn-enviar input:hover{
 }
 
 .services-info h4 {
-    font-size: 23px;
+    font-size: 1rem;
     font-weight: 800;
     line-height: 2;
     text-align: center;
@@ -1206,7 +1013,7 @@ form .btn-enviar input:hover{
     font-size: 10px;
     font-weight: 400;
     line-height: 1.0;
-    margin: 0 12px 0 12px;
+    margin: 0 5px 0 5px;
 }
 
 /* SOBRE */
@@ -1267,26 +1074,6 @@ form .btn-enviar input:hover{
 }
 
 .btn button:hover {
-    transform: none;
-    box-shadow: none;
-}
-
-/* CONTATO */
-form{
-    max-width: 280px;
-}
-
-::placeholder{
-    font-size: 13px;
-}
-
-form .btn-enviar input{
-    width: 80px;
-    font-size: 11px;
-    transition: none;
-}
-
-form .btn-enviar input:hover{
     transform: none;
     box-shadow: none;
 }
